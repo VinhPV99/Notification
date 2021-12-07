@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notification_big_style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/notification_big_style_imageview">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/song_title_notification_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    android:text="@string/Title_defaut" />
+
+                <TextView
+                    android:id="@+id/song_artist_notification_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textSize="16sp"
+                    android:text="@string/Artist_default" />
+                <TextView
+                    android:id="@+id/app_notification_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textSize="16sp"
+                    android:text="@string/app_name"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/previous_notification_big_style_imageview"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_previous_song"
+                    android:layout_margin="10dp"/>
+                <ImageView
+                    android:id="@+id/play_notification_big_style_imageview"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/ic_pause"
+                    android:layout_margin="10dp"/>
+                <ImageView
+                    android:id="@+id/next_notification_big_style_imageview"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_next_song"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/notification_big_style_imageview"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_margin="5dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_notification_default" />
+    </RelativeLayout>
+</RelativeLayout>
